@@ -1,7 +1,5 @@
 const btnIndex = document.querySelector( "[data-btnindex]" );
 
-console.log( btnIndex ) 
-
 function insertarVideo(){
     const cartel = document.querySelector( "[data-cartel]" );
 
