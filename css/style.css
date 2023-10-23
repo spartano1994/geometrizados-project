@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+img {
+    overflow-clip-margin: none;
+    overflow: none;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -273,7 +278,7 @@ main {
     justify-content: center;
 }
 
-.youtube-button{
+.youtube-button {
     width: 58%;
     padding: 20%;
     height: fit-content;
