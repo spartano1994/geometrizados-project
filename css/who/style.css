@@ -1,0 +1,178 @@
+:root {
+    --font-phrase: 'Spinnaker', sans-serif;
+    --font-title: 'Alegreya', serif;
+    --color-margin-coment: #a3a3a3;
+    --color-aside-menu: rgb(235, 235, 235);
+    --color-aside-option:#4b4b4b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+img {
+    overflow-clip-margin: none;
+    overflow: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    font-size: 4vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*--------------------------------------------------------------------------*/
+    /*aside*/
+
+.open-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-aside {
+    display: none;
+}
+
+.aside-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    font-size:7vw;
+    background-color: var(--color-aside-menu);
+}
+
+.close-img {
+    width: 7%;
+    align-self: end;
+    margin-right: 50px;
+    filter: invert(21%) sepia(71%) saturate(35%) hue-rotate(314deg) brightness(104%) contrast(83%);
+}
+
+.option-list {
+    list-style: none;
+    text-align: center;
+}
+
+.option-aside-text {
+    text-decoration: none;
+    color: var(--color-aside-option);
+    font-family: var(--font-phrase);
+}
+
+/*--------------------------------------------------------------------------*/
+    /*header*/
+
+.cabecera {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.logos-container{
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hilbert-logo {
+    width: 25%;
+}
+
+.text-logo {
+    width: 75%;
+}
+
+.media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    width: 60%;
+    padding-left: 1rem;
+}
+
+.icon {
+    width: 18%;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.menu {
+    width: 8%;
+    cursor: pointer;
+    margin-right: 1.2rem;
+}
+
+.phrase-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 4vw;
+    text-align: justify;
+    font-family: var(--font-phrase);
+    font-style: italic;
+}
+
+/*--------------------------------------------------------------------------*/
+    /*description*/
+
+
+/*--------------------------------------------------------------------------*/
+    /**/
+
+
+/*--------------------------------------------------------------------------*/
+    /*patreon*/
+
+/*--------------------------------------------------------------------------*/
+    /*courses*/
+
+/*--------------------------------------------------------------------------*/
+    /*more*/
+
+/*--------------------------------------------------------------------------*/
+    /*comments*/
+
+/*--------------------------------------------------------------------------*/
+
+    /*Botón like*/
+
+/*--------------------------------------------------------------------------*/
+
+    /*Carousel*/
+
+/*---------------------------------------------------------------------------*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    z-index: 1;
+}
+
+.footer > p {
+    display: inline;
+    margin: 1rem;
+}

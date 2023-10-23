@@ -1,0 +1,94 @@
+:root {
+    --font-phrase: 'Spinnaker', sans-serif;
+    --font-title: 'Alegreya', serif;
+    --color-margin-coment: #a3a3a3;
+    --color-aside-menu: rgb(235, 235, 235);
+    --color-aside-option:#4b4b4b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+img {
+    overflow-clip-margin: none;
+    overflow: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    padding: 3.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*--------------------------------------------------------------------------*/
+    /*aside*/
+
+.aside-menu {
+    font-size:5vw;
+}
+
+/*--------------------------------------------------------------------------*/
+    /*header*/
+
+.cabecera {
+    padding: 3.2rem;
+    padding-bottom: 2rem;
+}
+
+.logos-container{
+    padding: 3rem;
+}
+
+.icon {
+    width: 14%;
+    margin-right: 0.5rem;
+}
+
+.phrase-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 3.5vw;
+}
+
+/*--------------------------------------------------------------------------*/
+    /*description*/
+
+.description-container {
+    margin-bottom: 2.5rem;
+}
+
+/*--------------------------------------------------------------------------*/
+    /*patreon*/
+
+.patreon-container {
+    margin-bottom: 2.5rem;
+}
+
+/*--------------------------------------------------------------------------*/
+    /*courses*/
+
+.courses-container {
+    margin-bottom: 2.5rem;
+}
+
+/*--------------------------------------------------------------------------*/
+    /*more*/
+
+.more-container{
+    margin-bottom: 2.5rem;
+}
+
+/*--------------------------------------------------------------------------*/
+    /*footer*/
+
+.footer {
+    font-size: 3rem;
+}
