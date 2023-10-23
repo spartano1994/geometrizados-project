@@ -7,7 +7,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Inter:wght@400;700&family=Marck+Script&family=Space+Grotesk:wght@300;400;500;600&family=Spinnaker&display=swap" rel="stylesheet">
-        <link rel="icon" href="/assets/image/page-logo.jpg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/logico/lazy-youtube-embed/dist/lazy-youtube-embed.css" />
+        <link rel="stylesheet" href="node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+        <link rel="icon" href="./assets/image/page-logo.jpg">
         <title>Geometrizados</title>
 
     </head>
@@ -53,7 +55,7 @@
 
             </section>
 
-            <section class="carousel-courses">
+            <section class="carousel-courses" data-carousel>
 
             </section>
 
@@ -69,12 +71,14 @@
                 
             </section>
 
+            
+
             <section class="courses-container">
-                <p class="courses-title">¡¡¡Mejora tus calificaciones, domina tus materias,  resuelve tus dudas, resuelve tu tarea, prepara tu exposición y aprende por tu cuenta!!!.</p>
-                <p>Contamos con los siguientes cursos:</p>
+                <p class="courses-title">¡¡¡Mejora tu rendimiento académico, domina tus materias,  resuelve tus dudas, aprende del apasionante mundo de la ciencia, comprende los fenómenos más interesantes del mundo donde vives y aprende por tu cuenta!!!.</p>
+                <p>Los siguientes cursos de encuentran en construcción:</p>
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>Álgebra superior</li>
+                    <li>Cálculo de una variable</li>
                 </ul>
                 <button class="courses-button" onclick="location.href='./pages/courses.html'">Ir a cursos</button>
 
@@ -82,10 +86,12 @@
 
             <section class="more-container">
                 <h2 class="more-title">Algo más</h2>
-                <div class="more-video container">
-                    <iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/LEwXRUB6LP4?si=8f782-5nWDcLc93K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <p class="more-text">El canal de Youtube CienciasTV, administrado por la comunidad universitaria de la Facultad de Ciencias de la UNAM, hace una gran labor al difundir de manera completa, pláticas de grandes cientificos e investigadores de diversas universidades que se dan en la República mexicana. Creemos que difundir su existencia es de gran importancia para el enriquecimiento estudiantil de México. Te invitamos a darle un vistazo al material que expone.</p>
+                <lite-youtube videoid="LEwXRUB6LP4?si=EgWo6h_g1Yp3QMdL" style="background-image: url('https://i.ytimg.com/vi/LEwXRUB6LP4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgBi0szrqrfcAKEjh48uzm9pCplg');" class="youtube-container">
+                    <a href="https://www.youtube.com/watch?v=LEwXRUB6LP4&pp=ygUdcGF0cmljaWEgcGVsbGljZXIgY292YXJydWJpYXM%3D" class="lty-playbtn" title="Play Video">
+                      <span class="lyt-visually-hidden">Cómo encontrar órbitas en hiperespacios</span>
+                    </a>
+                  </lite-youtube>
+                <p class="more-text">El canal de Youtube CienciasTV, por actualmente por Efrain Vega y su equipo de colaboradores, hace una gran labor al difundir de manera completa, pláticas de grandes cientificos e investigadores de diversas universidades que se dan en la República mexicana. Creemos que difundir su existencia es de gran importancia para el enriquecimiento estudiantil de México. Te invitamos a darle un vistazo al material que expone y a apoyar al canal.</p>
 
             </section>
 
@@ -93,10 +99,41 @@
                 <h2 class="comments-title">Ayudanos a mejorar, deja un <br>comentario...</h2>
                 
                 <p class="comment-counter">0 comentarios</p>
+
                 <div class="comment-edit-container">
-                    <img src="./assets/image/avatar-icon.png" alt="ícono de imagen" class="comment-avatar">
-                    <textarea name="comment" id="comentario" class="comment-edit"></textarea>
+                    <form action="" method="post" enctype="multipart/form-data" target="_blank">
+                        <input type="file" accept="image/*" name="user-photo" id="comment-photo">
+                        <label for="comment-photo" class="comment-photo-label">
+                            <img src="./assets/image/avatar-icon.png" alt="ícono de imagen" class="comment-avatar">
+                        </label>
+
+                        <textarea name="comment" id="comentario" class="comment-edit"></textarea>
+
+                        <button type="submit" class="comment-send">Enviar</button>
+                    </form>
+
+                    
                 </div>
+
+                <div class="con-like">
+                    <input class="like" type="checkbox" title="like">
+                    <div class="checkmark">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="outline" viewBox="0 0 24 24">
+                        <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="filled" viewBox="0 0 24 24">
+                        <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="celebrate">
+                        <polygon class="poly" points="10,10 20,20"></polygon>
+                        <polygon class="poly" points="10,50 20,50"></polygon>
+                        <polygon class="poly" points="20,80 30,70"></polygon>
+                        <polygon class="poly" points="90,10 80,20"></polygon>
+                        <polygon class="poly" points="90,50 80,50"></polygon>
+                        <polygon class="poly" points="80,80 70,70"></polygon>
+                      </svg>
+                    </div>
+                  </div>
                 
             </section>
 
@@ -107,5 +144,6 @@
         </footer>
 
         <script src="./js/main.js"></script>
+        <script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
     </body>
 </html>

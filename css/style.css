@@ -262,7 +262,7 @@ main {
     text-align: justify;
 }
 
-.more-video-container {
+.youtube-container {
     width: 100%;
 }
 
@@ -314,11 +314,122 @@ main {
 }
 
 .comment-avatar {
-    width: 30%;
+    width: 100%;
     height: fit-content;
 }
 
+.comment-photo-label {
+    width: 30%;
+    z-index: 1;
+}
+
+#comment-photo {
+    width: 0.01%;
+    height: 0.01%;
+    position: absolute;
+    left: 50px;
+    background-color: none;
+    border: none;
+    background-image: url(/assets/image/avatar-icon.png);
+    background-size: cover;
+    z-index: 10;
+}
+
+.comment-send {
+    width: 100%;
+    height: 20px;
+}
+
+
 
 /*--------------------------------------------------------------------------*/
 
+    /*Botón like*/
+
+.con-like {
+  --red: rgb(255, 50, 50);
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.con-like .like {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.con-like .checkmark {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con-like .outline,
+.con-like .filled {
+  fill: var(--red);
+  position: absolute;
+}
+
+.con-like .filled {
+  animation: kfr-filled 0.5s;
+  display: none;
+}
+
+.con-like .celebrate {
+  position: absolute;
+  animation: kfr-celebrate 0.5s;
+  animation-fill-mode: forwards;
+  display: none;
+}
+
+.con-like .poly {
+  stroke: var(--red);
+  fill: var(--red);
+}
+
+.con-like .like:checked ~ .checkmark .filled {
+  display: block
+}
+
+.con-like .like:checked ~ .checkmark .celebrate {
+  display: block
+}
+
+@keyframes kfr-filled {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes kfr-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------------------*/
+
+/*Carousel*/
+
