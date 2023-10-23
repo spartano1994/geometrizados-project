@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "lite-youtube-embed": "^0.3.0",
     "npm": "^10.2.1"
   },
   "name": "geometrizados_project",

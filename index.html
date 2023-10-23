@@ -86,11 +86,10 @@
 
             <section class="more-container">
                 <h2 class="more-title">Algo más</h2>
-                <lite-youtube videoid="LEwXRUB6LP4?si=EgWo6h_g1Yp3QMdL" style="background-image: url('https://i.ytimg.com/vi/LEwXRUB6LP4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgBi0szrqrfcAKEjh48uzm9pCplg');" class="youtube-container">
-                    <a href="https://www.youtube.com/watch?v=LEwXRUB6LP4&pp=ygUdcGF0cmljaWEgcGVsbGljZXIgY292YXJydWJpYXM%3D" class="lty-playbtn" title="Play Video">
-                      <span class="lyt-visually-hidden">Cómo encontrar órbitas en hiperespacios</span>
-                    </a>
-                  </lite-youtube>
+                <div class="youtube-container" data-cartel>
+                    <img src="./assets/image/yt-logo-carga.svg" alt="Botón de reproducir video" class="youtube-button" data-btnindex>
+                </div>
+                
                 <p class="more-text">El canal de Youtube CienciasTV, por actualmente por Efrain Vega y su equipo de colaboradores, hace una gran labor al difundir de manera completa, pláticas de grandes cientificos e investigadores de diversas universidades que se dan en la República mexicana. Creemos que difundir su existencia es de gran importancia para el enriquecimiento estudiantil de México. Te invitamos a darle un vistazo al material que expone y a apoyar al canal.</p>
 
             </section>
@@ -100,20 +99,18 @@
                 
                 <p class="comment-counter">0 comentarios</p>
 
-                <div class="comment-edit-container">
-                    <form action="" method="post" enctype="multipart/form-data" target="_blank">
-                        <input type="file" accept="image/*" name="user-photo" id="comment-photo">
-                        <label for="comment-photo" class="comment-photo-label">
-                            <img src="./assets/image/avatar-icon.png" alt="ícono de imagen" class="comment-avatar">
-                        </label>
+                <form action="" method="post" enctype="multipart/form-data" target="_blank" class="comment-edit-container">
+                    <input type="file" accept="image/*" name="user-photo" id="comment-photo">
+                    <label for="comment-photo" class="comment-photo-label">
+                        <img src="./assets/image/avatar-icon.png" alt="ícono de imagen" class="comment-avatar">
+                    </label>
 
-                        <textarea name="comment" id="comentario" class="comment-edit"></textarea>
+                    <textarea name="comment" id="comentario" class="comment-edit"></textarea>
 
-                        <button type="submit" class="comment-send">Enviar</button>
-                    </form>
+                    <button type="submit" class="comment-send">Enviar</button>
+                </form>
 
                     
-                </div>
 
                 <div class="con-like">
                     <input class="like" type="checkbox" title="like">
@@ -144,6 +141,6 @@
         </footer>
 
         <script src="./js/main.js"></script>
-        <script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+        <script src="./js/insert_video.js"></script>
     </body>
 </html>
