@@ -134,6 +134,10 @@ main {
     font-style: italic;
 }
 
+.nav-container {
+    display: none;
+}
+
 /*--------------------------------------------------------------------------*/
     /*description*/
 
@@ -239,6 +243,10 @@ main {
 
 /*--------------------------------------------------------------------------*/
     /*more*/
+.aux-container {
+    width: 100%;
+    height: fit-content;
+}
 
 .more-container{
     padding: 1.5rem;
